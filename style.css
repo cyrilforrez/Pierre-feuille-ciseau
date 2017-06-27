@@ -9,10 +9,6 @@ body {
 html {
 	color: black;
 	background-color: white;
-	background-image: none;
-	background-repeat: repeat;
-	background-attachment: scroll;
-	background-position: 0% 0%;
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size: small;
 }
@@ -21,11 +17,27 @@ h1 {
 	color: white;
 }
 
+header {
+	padding: 2%;
+}
+
+form {
+	padding: 8%;
+}
+
+.tb {
+	width: 100%;
+}
+
+.tb2 {
+	width: 45%;
+}
+
 table {
 	background-color: #ffffff;
 	border-color: #000000;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 5px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
