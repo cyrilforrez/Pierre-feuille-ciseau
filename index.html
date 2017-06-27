@@ -27,17 +27,18 @@
 					<td colspan="3"> <input name="texte" size="15" style="text-align:center" type="text" readonly> </td>
 				</tr>
 				<tr>
-					<td> <input value=" Pierre " onclick="res(this.form,'Pierre')" type="button"> </td>
-					<td> <input value=" Feuille " onclick="res(this.form,'Feuille')" type="button"> </td>
-					<td> <input value=" Ciseau " onclick="res(this.form,'Ciseau')" type="button"> </td>
+					<td width="150"> <input class="tb" value=" Pierre " onclick="res(this.form,'Pierre')" type="button"> </td>
+					<td width="150"> <input class="tb" value=" Feuille " onclick="res(this.form,'Feuille')" type="button"> </td>
+					<td width="150"> <input class="tb" value=" Ciseau " onclick="res(this.form,'Ciseau')" type="button"> </td>
 				</tr>
 				<tr>
-					<td colspan="3"> <input value=" Résultat... " onclick='compute(); testing(this.form); raz(this.form)' type="button"> <button id="refresh" onclick="document.location.reload(false)"> Rafraichir </button></td>
+					<td colspan="3"> <input class="tb2" value=" Résultat... " onclick='compute(); testing(this.form); raz(this.form)' type="button"> 
+					<button class="tb2" id="refresh" onclick="document.location.reload(false)"> Rafraichir </button></td>
 				</tr>
 			</tbody>
 			</table>
 			<br>
-				<div id="score" style="font-weight: bold; text-align: center">
+				<div id="score" style="font-weight: bold; text-align: center;">
 				Gagné: 0 fois. Perdu: 0 fois.
 				</div>
 			</div>
