@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<title>Pierre Feuille Ciseau</title>
+		<meta name="description" content="Jeu du Pierre Feuille Ciseau" />
+		
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<div style="text-align: center"><h1>Pierre Feuille Ciseau</h1></div>
+			</header>
+			
+			<script type="text/javascript" src="script.js"> </script>
+			<noscript>Désolé, le jeu a besoin de JavaScript pour fonctionner!</noscript>
+			
+			<form>
+			<div> <br>
+			<table>
+			<tbody>
+				<tr>
+					<td colspan="3"> <input name="texte" size="15" style="text-align:center" type="text" readonly> </td>
+				</tr>
+				<tr>
+					<td> <input value=" Pierre " onclick="res(this.form,'Pierre')" type="button"> </td>
+					<td> <input value=" Feuille " onclick="res(this.form,'Feuille')" type="button"> </td>
+					<td> <input value=" Ciseau " onclick="res(this.form,'Ciseau')" type="button"> </td>
+				</tr>
+				<tr>
+					<td colspan="3"> <input value=" Résultat... " onclick='compute(); testing(this.form); raz(this.form)' type="button"> <button id="refresh" onclick="document.location.reload(false)"> Rafraichir </button></td>
+				</tr>
+			</tbody>
+			</table>
+			<br>
+				<div id="score" style="font-weight: bold; text-align: center">
+				Gagné: 0 fois. Perdu: 0 fois.
+				</div>
+			</div>
+			</form>
+		</div>
+	</body>
+</html>
