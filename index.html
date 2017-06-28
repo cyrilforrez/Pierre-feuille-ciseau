@@ -16,33 +16,14 @@
 				<div style="text-align: center"><h1>Pierre Feuille Ciseau</h1></div>
 			</header>
 			
-			<script type="text/javascript" src="script.js"> </script>
-			<noscript>Désolé, le jeu a besoin de JavaScript pour fonctionner!</noscript>
 			
-			<form>
-			<div> <br>
-			<table>
-			<tbody>
-				<tr>
-					<td colspan="3"> <input name="texte" size="15" style="text-align:center" type="text" readonly> </td>
-				</tr>
-				<tr>
-					<td width="150"> <input class="tb" value=" Pierre " onclick="res(this.form,'Pierre')" type="button"> </td>
-					<td width="150"> <input class="tb" value=" Feuille " onclick="res(this.form,'Feuille')" type="button"> </td>
-					<td width="150"> <input class="tb" value=" Ciseau " onclick="res(this.form,'Ciseau')" type="button"> </td>
-				</tr>
-				<tr>
-					<td colspan="3"> <input class="tb2" value=" Résultat... " onclick='compute(); testing(this.form); raz(this.form)' type="button"> 
-					<button class="tb2" onclick="document.location.reload(false)"> Rafraichir </button></td>
-				</tr>
-			</tbody>
-			</table>
-			<br>
-				<div id="score" style="font-weight: bold; text-align: center;">
+				<div id="score">
 				Gagné: 0 fois. Perdu: 0 fois.
 				</div>
 			</div>
 			</form>
 		</div>
+
+		<script type="text/javascript" src="script.js"> </script>
 	</body>
 </html>
