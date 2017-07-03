@@ -1,20 +1,26 @@
-var choixUtilisateur;
-var choixOrdi ;
+//-------------------------------Declaration of variable----------------------------------------
+
+var Utilisateur;
+var Ordinateur ;
 var scoreJ = 0;
 var scoreO = 0;
-while (Math.abs(scoreJ-scoreO)<2) {
-	choixUtilisateur = prompt("Choisissez-vous pierre, feuille, ou ciseaux ?");
-	choixOrdi = Math.random();
 
-if (choixOrdi < 0.34) {
-	choixOrdi = "pierre";
-	} else if(choixOrdi <= 0.67) {
-	choixOrdi = "feuille";
+//-----------------------------------Main loop---------------------------------------------
+
+while (Math.abs(scoreJ-scoreO)<2) {
+	Utilisateur = prompt("Choisissez-vous pierre, feuille, ou ciseaux ?");
+	Ordinateur = Math.random();
+
+if (Ordinateur < 0.34) {
+	Ordinateur = "pierre";
+	} else if(Ordinateur <= 0.67) {
+	Ordinateur = "feuille";
 } else {
-	choixOrdi = "ciseaux";
+	Ordinateur = "ciseaux";
 }
 
 
+//------------------------------------------Main function---------------------------------------
 
 	var comparer = function(choix1, choix2) {
 	    var temp;
@@ -51,6 +57,9 @@ if (choixOrdi < 0.34) {
 	            scoreO++;
 	        }
 	    }
+
+//-------------------------------------------Score display-----------------------------------------------
+
 	    document.getElementById("score").innerHTML = "Gagné: " + scoreJ + " fois. Perdu: " + scoreO + " fois.";    
 	    if (temp == 1) {
 	    	return "Vous avez gagné!";
@@ -61,7 +70,7 @@ if (choixOrdi < 0.34) {
 
 		
 	}
-	alert("Ordinateur: "+choixOrdi +"."+" "+ "Vous: "+choixUtilisateur +".");
-	alert(comparer(choixUtilisateur,choixOrdi));
+	alert("Ordinateur: "+Ordinateur +"."+" "+ "Vous: "+Utilisateur +".");
+	alert(comparer(Utilisateur,Ordinateur));
 	
 }
